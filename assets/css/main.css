@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 56px;
+}
+header {
+	z-index: 2;
+}
+nav {
+	z-index: 2;
+}
+main {
+	width: 100%;
+	height: 100%;
+}
+textarea {
+	height: 100px;
+}
+.my-photo {
+	align-self: center;
+	width: 120px;
+	height: 120px;
+	border: 8px solid #555;
+}
+.social-links > a {
+	text-decoration: none;
+	color: #fff;
+}
+.social-links > a:hover {
+	color: #ddd;
+}
+.hero {
+	content: '';
+	background-image: url(../../img/25.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+.title-background {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.text-light {
+	z-index: 1;
+}
+.title::after {
+	content: '';
+	display: block;
+	left: 0;
+	top: 0;
+	height: 3px;
+	width: 5rem;
+	margin-top: 1rem;
+	background: #0d6efd;
+}
+.counter {
+	font-size: 3rem;
+}
+.resume-item {
+	position: relative;
+	height: fit-content;
+}
+.resume-item::before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #0d6efd;
+	border-radius: 50%;
+}
+.resume-item::after {
+	content: '';
+	position: absolute;
+	top: 22px;
+	left: 7px;
+	width: 2px;
+	bottom: 0;
+	border: 1px solid #0d6efd;
+}
+.portfolio-img {
+	transition: opacity 0.3s;
+}
+.portfolio-img:hover {
+	opacity: 0.7;
+}
+.card-text {
+	text-align: justify;
+	font-size: 14px;
+}
+.card {
+	margin-top: auto;
+}
+.carousel-item {
+	max-height: 600px;
+}

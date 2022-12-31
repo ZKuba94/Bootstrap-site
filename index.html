@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header id="header" class="position-relative">
+    <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#header">
@@ -45,8 +45,8 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="profile d-flex flex-column align-items-center d-lg-none">
-                        <img src="./img/1.jpeg" class="my-photo rounded-circle d-block d-lg-none" alt="photo of author">
-                        <p class="fs-4 text-center fw-bold py-2">Jakub Żurawski</p>
+                        <img src="./img/1.jpeg" class="my-photo rounded-circle d-block d-lg-none" alt="Photo of author">
+                        <p class="fs-4 text-center fw-bolder py-2">Jakub Żurawski</p>
                         <div class="social-links d-flex justify-content-around w-75">
                             <a href="#" class="twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
@@ -93,7 +93,7 @@
                                         class="bi bi-house-door me-2" viewBox="0 0 16 16">
                                         <path
                                             d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
-                                    </svg>Home</a>
+                                    </svg>home</a>
                             </li>
                             <li class="nav-item text-capitalize py-sm-1 py-md-2 py-lg-0">
                                 <a class="nav-link text-capitalize" href="#about-me"><svg
@@ -136,7 +136,6 @@
                                             d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z" />
                                     </svg>contact</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -145,15 +144,15 @@
         <div class="hero d-flex flex-column align-items-center justify-content-center">
             <div class="title-background opacity-50 bg-dark position-absolute top-0 start-0 ">
             </div>
-            <h1 class="text-light display-1">Jakub Żurawski</h1>
+            <h1 class="text-light fw-bold display-1">Jakub Żurawski</h1>
             <p class="text-light display-6">Welcome on my site !</p>
         </div>
     </header>
     <main>
-        <section id="about-me" class="about-me">
+        <section id="about-me">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="about-me-title title text-capitalize fw-bold mt-5 mb-4">about me</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">about me</h2>
                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus sed
                         totam culpa similique
                         molestias odio dolorum quis voluptate accusamus, saepe nisi quos, minus nam fugiat et ab ipsam
@@ -163,7 +162,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="./img/1.jpeg" class="img-fluid rounded" alt="My photo">
+                        <img src="./img/1.jpeg" class="img-fluid rounded" alt="Photo of author">
                     </div>
                     <div class="col-lg-8">
                         <h3 class="fw-bold mt-4 mb-4 mt-lg-0 mb-lg-2">UI/UX Designer & Web Developer</h3>
@@ -270,8 +269,8 @@
         </section>
         <section class="numbers">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="numbers-title title text-capitalize fw-bold mt-5 mb-4">some numbers</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">some numbers</h2>
                     <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere ad,
                         blanditiis aspernatur sed omnis deserunt magnam nostrum officiis cum a. Fugiat, voluptatibus
                         enim provident neque amet eveniet natus eum.</p>
@@ -285,7 +284,7 @@
                                 <path
                                     d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
                             </svg>
-                            <div class="describe-box ps-2">
+                            <div class="ps-2">
                                 <span class="counter lh-1 fw-bold">5</span>
                                 <p>
                                     <strong>Happy Clients</strong>
@@ -301,7 +300,7 @@
                                 <path fill-rule="evenodd"
                                     d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
                             </svg>
-                            <div class="describe-box ps-2">
+                            <div class="ps-2">
                                 <span class="counter lh-1 fw-bold">42</span>
                                 <p>
                                     <strong>Projects</strong>
@@ -317,7 +316,7 @@
                                 <path
                                     d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
                             </svg>
-                            <div class="describe-box ps-2">
+                            <div class="ps-2">
                                 <span class="counter lh-1 fw-bold">2137</span>
                                 <p>
                                     <strong>Hours</strong>
@@ -333,7 +332,7 @@
                                 <path
                                     d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
                             </svg>
-                            <div class="describe-box ps-2">
+                            <div class="ps-2">
                                 <span class="counter lh-1 fw-bold">120</span>
                                 <p>
                                     <strong>Countries</strong>
@@ -343,13 +342,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="skills">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="skills-title title text-capitalize fw-bold mt-5 mb-4">skills</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">skills</h2>
                     <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt porro ex ut
                         veritatis soluta quae, in fugit cumque rerum, officiis voluptatum maxime nostrum quia asperiores
                         quis repellat deserunt dolorem tempore! Amet, laudantium similique.</p>
@@ -392,11 +390,10 @@
                 </div>
             </div>
         </section>
-
-        <section id="resume" class="resume">
+        <section id="resume">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="resume-title title text-capitalize fw-bold mt-5 mb-4">resume</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">resume</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur molestiae
                         accusamus quis iste debitis voluptas aliquam, error aspernatur odio magni omnis molestias,
                         temporibus maxime eligendi cupiditate facilis, voluptate aliquid excepturi minus. Minima vero
@@ -404,7 +401,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <h3 class="resume-title fw-bold">Sumary</h3>
+                        <h3 class="fw-bold">Sumary</h3>
                         <div class="resume-item ps-4">
                             <h4 class="fw-bold">Jakub Żurawski</h4>
                             <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
@@ -416,7 +413,7 @@
                                 <li>zkuba94@gmail.com</li>
                             </ul>
                         </div>
-                        <h3 class="resume-title fw-bold">Education</h3>
+                        <h3 class="fw-bold">Education</h3>
                         <div class="resume-item ps-4">
                             <h4 class="fw-bold">Logistics</h4>
                             <span class="badge bg-primary p-2 mb-2">2013-2017</span>
@@ -428,7 +425,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h3 class="resume-title fw-bold">Experience</h3>
+                        <h3 class="fw-bold">Experience</h3>
                         <div class="resume-item ps-4">
                             <h4 class="fw-bold">Freight Forwarder</h4>
                             <span class="badge bg-primary p-2 mb-2">2019-2022</span>
@@ -437,7 +434,6 @@
                                 consequatur earum mollitia omnis, sint deserunt labore repudiandae ab? Voluptatem ipsa
                                 numquam dolor ducimus cum necessitatibus aut rem facere. Magnam, ipsa enim!</p>
                         </div>
-                        <!-- <h3 class="resume-title fw-bold">Programming</h3> -->
                         <div class="resume-item ps-4 mb-5">
                             <h4 class="fw-bold">Programming</h4>
                             <span class="badge bg-primary p-2 mb-2">2022</span>
@@ -450,54 +446,58 @@
                 </div>
             </div>
         </section>
-
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="portfolio-title title text-capitalize fw-bold mt-5 mb-4">portfolio</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">portfolio</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid eius
                         dolores sequi ratione doloremque quisquam officiis natus ab odit, consequuntur reprehenderit
                         blanditiis sed praesentium repellendus culpa alias. Quo libero amet laboriosam.</p>
                 </div>
-                <div class="row portfolio-container">
+                <div class="row">
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
-                        <img class="img-fluid portfolio-img" src="./img/normal/christmas-g4c5c569df_1920.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="./img/normal/christmas-g4c5c569df_1920.jpg"
+                            alt="Gift box">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
-                        <img class="img-fluid portfolio-img" src="./img/normal/cold-gcf9175baf_1920.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="./img/normal/cold-gcf9175baf_1920.jpg"
+                            alt="Snowy forest in bright of sun">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
-                        <img class="img-fluid portfolio-img" src="./img/normal/mountains-gaf39cb344_1280.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="./img/normal/mountains-gaf39cb344_1280.jpg"
+                            alt="View from top of mountain to the cloud">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
-                        <img class="img-fluid portfolio-img" src="./img/normal/skiing-gbd6e9c75b_1920.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="./img/normal/skiing-gbd6e9c75b_1920.jpg"
+                            alt="Winter in forest">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
                         <img class="img-fluid portfolio-img" src="./img/normal/christmas-motif-g123f9d1e8_1920.jpg"
-                            alt="">
+                            alt="Sheet of notes to play with christmas items">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
                         <img class="img-fluid portfolio-img" src="./img/normal/table-setting-g7ad0ab69b_1920.jpg"
-                            alt="">
+                            alt="Christmas table cover">
                     </div>
-                    <div class="col-lg-4 col-md-6 p-2 p-md-3 table-hover">
-                        <img class="img-fluid portfolio-img" src="./img/normal/chipmunk-g4a7fd2929_1920.jpg" alt="">
+                    <div class="col-lg-4 col-md-6 p-2 p-md-3">
+                        <img class="img-fluid portfolio-img" src="./img/normal/chipmunk-g4a7fd2929_1920.jpg"
+                            alt="Squirell on fence">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
                         <img class="img-fluid portfolio-img" src="./img/normal/christmas-market-gf770ebd9a_1920.jpg"
-                            alt="">
+                            alt="City market with a carousel in the middle of it">
                     </div>
                     <div class="col-lg-4 col-md-6 p-2 p-md-3">
-                        <img class="img-fluid portfolio-img" src="./img/normal/mount-cook-gae297bc16_1920.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="./img/normal/mount-cook-gae297bc16_1920.jpg"
+                            alt="View on top of the mountain with the clouds">
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="testimonials" class="testimonials">
+        <section id="testimonials">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="testimonials-title title text-capitalize fw-bold mt-5 mb-4">testimonials</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">testimonials</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid eius
                         dolores sequi ratione doloremque quisquam officiis natus ab odit, consequuntur reprehenderit
                         blanditiis sed praesentium repellendus culpa alias. Quo libero amet laboriosam.</p>
@@ -516,14 +516,14 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="5000">
-                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50"
-                                    alt="...">
+                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50">
                                 <div
                                     class="carousel-caption d-flex flex-column justify-content-end justify-content-xl-center">
                                     <div class="quote d-flex flex-column align-items-center mt-xl-5">
                                         <div class="card" style="width: 18rem;">
                                             <img src="./img/testimonials/attractive-gbdef00b17_640.jpg"
-                                                class="card-img-top d-none d-lg-block" alt="...">
+                                                class="card-img-top d-none d-lg-block"
+                                                alt="Photo of author of first testimonial">
                                             <div class="card-body p-2 p-sm-4">
                                                 <p class="card-text text-dark">"Lorem ipsum, dolor sit
                                                     amet consectetur
@@ -540,13 +540,14 @@
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
                                 <img src="./img/small/mountains-gcdb42054b_640.jpg"
-                                    class="testimonials-hero d-block w-100 opacity-50" alt="...">
+                                    class="testimonials-hero d-block w-100 opacity-50">
                                 <div
                                     class="carousel-caption d-flex flex-column justify-content-end justify-content-xl-center">
                                     <div class="quote d-flex flex-column align-items-center mt-xl-5">
                                         <div class="card" style="width: 18rem;">
                                             <img src="./img/testimonials/beard-gdab7ca057_640.jpg"
-                                                class="card-img-top d-none d-lg-block" alt="...">
+                                                class="card-img-top d-none d-lg-block"
+                                                alt="Photo of author of second testimonial">
                                             <div class="card-body p-2 p-sm-4">
                                                 <p class="card-text text-dark">"Lorem ipsum dolor sit amet consectetur,
                                                     adipisicing elit. Maxime officiis, doloremque illo aliquam velit
@@ -561,18 +562,18 @@
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
-                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50"
-                                    alt="...">
+                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50">
                                 <div
                                     class="carousel-caption d-flex flex-column justify-content-end justify-content-xl-center">
                                     <div class="quote d-flex flex-column align-items-center mt-xl-5">
                                         <div class="card" style="width: 18rem;">
                                             <img src="./img/testimonials/happy-g7cf07f76c_640.jpg"
-                                                class="card-img-top d-none d-lg-block" alt="...">
+                                                class="card-img-top d-none d-lg-block"
+                                                alt="Photo of author of third testimonial">
                                             <div class="card-body p-2 p-sm-4">
-                                                <p class="card-text text-dark">"Lorem ipsum dolor sit amet consectetur,
-                                                    adipisicing elit. Ipsum voluptas consequatur magni rerum repellendus
-                                                    nobis velit! Exercitationem voluptas quae earum autem suscipit."</p>
+                                                <p class="card-text text-dark">"Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Ullam odit magnam qui? Hic repudiandae, itaque id
+                                                    temporibus tempore possimus libero. "</p>
                                             </div>
                                         </div>
                                     </div>
@@ -583,14 +584,14 @@
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
-                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50"
-                                    alt="...">
+                                <img src="./img/small/mountains-gcdb42054b_640.jpg" class="d-block w-100 opacity-50">
                                 <div
                                     class="carousel-caption d-flex flex-column justify-content-end justify-content-xl-center">
                                     <div class="quote d-flex flex-column align-items-center mt-xl-5">
                                         <div class="card" style="width: 18rem;">
                                             <img src="./img/testimonials/woman-g709ce2b4b_640.jpg"
-                                                class="card-img-top d-none d-lg-block" alt="...">
+                                                class="card-img-top d-none d-lg-block"
+                                                alt="Photo of author of fourth testimonial">
                                             <div class="card-body p-2 p-sm-4">
                                                 <p class="card-text text-dark">"Lorem ipsum dolor sit, amet
                                                     consectetur
@@ -620,11 +621,10 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="contact">
+        <section id="contact">
             <div class="container">
-                <div class="section-title">
-                    <h2 class="contact-title title text-capitalize fw-bold mt-5 mb-4">Contact</h2>
+                <div>
+                    <h2 class="title text-capitalize fw-bold mt-5 mb-4">Contact</h2>
                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut aliquid et quod
                         iste molestiae alias temporibus autem, quo sed dolorem sint deleniti consequuntur enim eum
                         inventore ut quisquam unde qui! Aspernatur, vero commodi.</p>
@@ -762,8 +762,7 @@
                 </form>
             </div>
         </section>
-
-        <footer class="footer" id="footer">
+        <footer id="footer">
             <div class="container d-flex justify-content-center">
                 <p class="mt-5">©2022 All rights reserved. Designed and Created by Jakub Żurawski.</p>
             </div>

@@ -6,11 +6,7 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 56px;
 }
-header {
-	z-index: 2;
-}
 nav {
-	z-index: 2;
 	font-family: 'Anybody', cursive;
 }
 main {
@@ -28,20 +24,9 @@ textarea {
 	height: 100px;
 }
 .my-photo {
-	align-self: center;
-	width: 120px;
-	height: 120px;
-	border: 8px solid #555;
-}
-.social-links > a {
-	text-decoration: none;
-	color: #fff;
-}
-.social-links > a:hover {
-	color: #ddd;
+	object-fit: cover;
 }
 .hero {
-	content: '';
 	background-image: url(../img/25.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -50,14 +35,8 @@ textarea {
 	height: 100vh;
 	font-family: 'Anybody', cursive;
 }
-.title-background {
-	width: 100%;
-	height: 100%;
-	padding-top: 56px;
-	z-index: 0;
-}
-.text-light {
-	z-index: 1;
+.hero-text {
+	transform: translate(-50%, -50%);
 }
 .title::after {
 	content: '';
@@ -67,13 +46,9 @@ textarea {
 	height: 3px;
 	width: 5rem;
 	margin-top: 1rem;
-	background: #0d6efd;
-}
-.counter {
-	font-size: 3rem;
+	background: var(--bs-primary);
 }
 .resume-item {
-	position: relative;
 	height: fit-content;
 }
 .resume-item::before {
@@ -83,7 +58,7 @@ textarea {
 	left: 0;
 	width: 16px;
 	height: 16px;
-	border: 2px solid #0d6efd;
+	border: 2px solid var(--bs-primary);
 	border-radius: 50%;
 }
 .resume-item::after {
@@ -93,7 +68,7 @@ textarea {
 	left: 7px;
 	width: 2px;
 	bottom: 0;
-	border: 1px solid #0d6efd;
+	border: 1px solid var(--bs-primary);
 }
 .portfolio-img {
 	transition: opacity 0.3s;
@@ -102,11 +77,7 @@ textarea {
 	opacity: 0.7;
 }
 .card-text {
-	text-align: justify;
 	font-size: 14px;
-}
-.card {
-	margin-top: auto;
 }
 .carousel-item {
 	max-height: 600px;

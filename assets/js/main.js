@@ -1,13 +1,11 @@
-// Zadanie 1
+// Task 1
 
-// const { userInfo } = require('os');
-
-// Rozwiazanie 1
+// Solution 1
 const array1 = [33, 4, -6, 55, 4, 3, 0];
 
 const sort = arr => {
 	if (arr === undefined || arr.length === 0) {
-		return console.log('pusta tablica');
+		return console.log('Empty array');
 	} else {
 		for (let j = 0; j < arr.length; j++) {
 			for (let i = 0; i < arr.length; i++) {
@@ -24,13 +22,13 @@ const sort = arr => {
 };
 // sort(array1);
 
-// Rozwiazanie 2
-let array2 = [25, 44, 17, 8, 6, 1, -6, 15];
+// Solution 2
+const array2 = [25, 44, 17, 8, 6, 1, -6, 15];
 const sort2 = arr => {
 	let array3 = [];
 	const arrayLength = arr.length;
 	if (arr === undefined || arr.length === 0) {
-		return console.log('pusta tablica');
+		return console.log('Empty array');
 	} else {
 		for (let i = 0; i < arrayLength; i++) {
 			x = Math.min(...arr);
@@ -43,20 +41,20 @@ const sort2 = arr => {
 };
 // sort2(array2);
 
-// Ten sposob nie dziala dobrze !
+// this way doesn't work correctly !
 let array4 = [33, 4, -6, 55, 4, 3, 0];
 const sort3 = arr => {
 	if (arr === undefined || arr.length === 0) {
-		return console.log('pusta tablica');
+		return console.log('Empty array');
 	} else {
 		return console.log(arr.sort());
 	}
 };
 // sort3(array4);
 
-// ZADANIE 2
+// TASK 2
 // const array5 = [9, 15, 68, 120, 677, 1340, 2789];
-const array5 = ['XC', 'IX', 'CM', 'DLXXXVII'];
+const array5 = ['iv', 'xi', 'xl','xc','cm', 'mc','cd',60];
 const romanianNumbers = [
 	{
 		symbol: 'I',
@@ -137,7 +135,7 @@ const checkArabicValue = arabicNumber => {
 		getUnits(unitsNumber);
 		const fourDigitsRoman = thousands.concat(hundreds.concat(tens.concat(units)));
 		return convertedNumbers.push(fourDigitsRoman.join(''));
-	} else return convertedNumbers.push('Poza zakresem lb. Rzymskich');
+	} else return convertedNumbers.push('Out of Romanian numbers scope');
 };
 const getIndexOfRomanianNumber = arabicNumber => {
 	if (romanianNumbers.find(digitObject => digitObject.value === arabicNumber)) {
@@ -238,7 +236,7 @@ const getThousands = arabicNumber => {
 const checkRomanianValue = romanianNumber => {
 	if (checkCorrectSymbol(romanianNumber)) {
 		checkSymbolOrder(romanianNumber);
-	} else return convertedNumbers.push('Błędny format lb. rzymskiej.');
+	} else return convertedNumbers.push('Invalid Romanian format .');
 };
 const checkCorrectSymbol = romanianNumber => {
 	for (let i = 0; i < romanianNumber.length; i++) {
@@ -255,7 +253,7 @@ const checkSymbolOrder = romanianNumber => {
 	}
 	for (let i = 0; i < romanianValue.length; i++) {
 		if (romanianValue[i] >= romanianValue[i + 1] || romanianValue[i + 1] === undefined) {
-		} else return checkSubstraction(romanianValue);
+		} else return checkSubtraction(romanianValue);
 	}
 	return romanianAdding(romanianValue);
 };
@@ -278,43 +276,50 @@ const romanianAdding = romanianValue => {
 				romanianValue[i] === romanianNumbers[6].value)
 		) {
 			convertedArabicNumber += romanianValue[i];
-		} else return convertedNumbers.push('Za dużo tych samych symboli obok siebie.');
+		} else return convertedNumbers.push('Too many same symbols in a row.');
 	}
 	convertedNumbers.push(convertedArabicNumber);
 };
-const checkSubstraction = romanianValue => {
-	console.log('odejmowanie');
+const checkSubtraction = romanianValue => {
 	convertedArabicNumber = 0;
 	for (let i = 0; i < romanianValue.length; i++) {
 		const filteredValues = romanianValue.filter(value => value === romanianValue[i]);
 		if (
-			filteredValues.length < 2 &&
-			(romanianValue[i] === romanianNumbers[1].value ||
-				romanianValue[i] === romanianNumbers[3].value ||
-				romanianValue[i] === romanianNumbers[5].value) &&
-			romanianValue[i + 1] === romanianValue[i] * 10
-		) {
-			convertedArabicNumber = romanianValue[i + 1] - romanianValue[i];
-		} else if (
 			filteredValues.length <= 3 &&
 			(romanianValue[i] === romanianNumbers[0].value ||
 				romanianValue[i] === romanianNumbers[2].value ||
 				romanianValue[i] === romanianNumbers[4].value ||
 				romanianValue[i] === romanianNumbers[6].value) &&
 			romanianValue[i + 1] === romanianValue[i] * 10 &&
-			romanianValue[i + 1] !== undefined
-		) {
+			romanianValue[i + 1] !== undefined)
+ 		{
+	 		convertedArabicNumber += romanianValue[i + 1] - romanianValue[i];
+		} else if (filteredValues.length < 2 &&
+			(romanianValue[i] === romanianNumbers[0].value ||
+				romanianValue[i] === romanianNumbers[2].value ||
+				romanianValue[i] === romanianNumbers[4].value) &&
+			romanianValue[i + 1] === romanianValue[i] * 5 &&
+			romanianValue[i + 1] !== undefined) {
 			convertedArabicNumber += romanianValue[i + 1] - romanianValue[i];
-		} else if (
+		}
+		else if (
 			filteredValues.length <= 3 &&
 			(romanianValue[i] === romanianNumbers[0].value ||
 				romanianValue[i] === romanianNumbers[2].value ||
 				romanianValue[i] === romanianNumbers[4].value ||
 				romanianValue[i] === romanianNumbers[6].value) &&
 			romanianValue[i + 1] === undefined
-		) {
-		} else return convertedNumbers.push('Błędny zapis liczby.');
-	}
+		) {}
+		else if (
+			filteredValues.length <2 &&
+			(romanianValue[i] !== romanianNumbers[0].value ||
+				romanianValue[i] !== romanianNumbers[2].value ||
+				romanianValue[i] !== romanianNumbers[4].value ||
+				romanianValue[i] !== romanianNumbers[6].value) &&
+			romanianValue[i + 1] === undefined
+		) {}
+		else return convertedNumbers.push('Invalid Romanian format.');
+	};
 	convertedNumbers.push(convertedArabicNumber);
-};
+}
 converterRomanianArabicNumbers(array5);

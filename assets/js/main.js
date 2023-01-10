@@ -56,7 +56,7 @@ const sort3 = arr => {
 
 // ZADANIE 2
 // const array5 = [9, 15, 68, 120, 677, 1340, 2789];
-const array5 = ['LXXX', 'VIII', 'LXXXI', 'DLXXXVII'];
+const array5 = ['XC', 'IX', 'CM', 'DLXXXVII'];
 const romanianNumbers = [
 	{
 		symbol: 'I',
@@ -100,7 +100,7 @@ const converterRomanianArabicNumbers = arr => {
 		if (typeof arr[i] === 'number') {
 			checkArabicValue(arr[i]);
 		} else if (typeof arr[i] === 'string') {
-			checkRomanianValue(arr[i]);
+			checkRomanianValue(arr[i].toUpperCase());
 		}
 	}
 	return console.log(array5, convertedNumbers);
@@ -285,7 +285,36 @@ const romanianAdding = romanianValue => {
 const checkSubstraction = romanianValue => {
 	console.log('odejmowanie');
 	convertedArabicNumber = 0;
-	const filteredValues = romanianValue.filter(value => value === romanianValue[i]);
+	for (let i = 0; i < romanianValue.length; i++) {
+		const filteredValues = romanianValue.filter(value => value === romanianValue[i]);
+		if (
+			filteredValues.length < 2 &&
+			(romanianValue[i] === romanianNumbers[1].value ||
+				romanianValue[i] === romanianNumbers[3].value ||
+				romanianValue[i] === romanianNumbers[5].value) &&
+			romanianValue[i + 1] === romanianValue[i] * 10
+		) {
+			convertedArabicNumber = romanianValue[i + 1] - romanianValue[i];
+		} else if (
+			filteredValues.length <= 3 &&
+			(romanianValue[i] === romanianNumbers[0].value ||
+				romanianValue[i] === romanianNumbers[2].value ||
+				romanianValue[i] === romanianNumbers[4].value ||
+				romanianValue[i] === romanianNumbers[6].value) &&
+			romanianValue[i + 1] === romanianValue[i] * 10 &&
+			romanianValue[i + 1] !== undefined
+		) {
+			convertedArabicNumber += romanianValue[i + 1] - romanianValue[i];
+		} else if (
+			filteredValues.length <= 3 &&
+			(romanianValue[i] === romanianNumbers[0].value ||
+				romanianValue[i] === romanianNumbers[2].value ||
+				romanianValue[i] === romanianNumbers[4].value ||
+				romanianValue[i] === romanianNumbers[6].value) &&
+			romanianValue[i + 1] === undefined
+		) {
+		} else return convertedNumbers.push('Błędny zapis liczby.');
+	}
+	convertedNumbers.push(convertedArabicNumber);
 };
-
 converterRomanianArabicNumbers(array5);
